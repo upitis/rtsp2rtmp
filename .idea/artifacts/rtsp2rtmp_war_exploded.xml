@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="rtsp2rtmp:war exploded">
+    <output-path>$PROJECT_DIR$/target/rtsp2rtmp-1.0</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="rtsp2rtmp" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.vaadin:vaadin-server:7.6.8" />
+          <element id="library" level="project" name="Maven: com.vaadin:vaadin-sass-compiler:0.9.13" />
+          <element id="library" level="project" name="Maven: com.vaadin.external.flute:flute:1.3.0.gg2" />
+          <element id="library" level="project" name="Maven: com.yahoo.platform.yui:yuicompressor:2.4.8" />
+          <element id="library" level="project" name="Maven: rhino:js:1.7R2" />
+          <element id="library" level="project" name="Maven: com.vaadin:vaadin-shared:7.6.8" />
+          <element id="library" level="project" name="Maven: com.vaadin.external.streamhtmlparser:streamhtmlparser-jsilver:0.0.10.vaadin1" />
+          <element id="library" level="project" name="Maven: com.vaadin.external.google:guava:16.0.1.vaadin1" />
+          <element id="library" level="project" name="Maven: org.jsoup:jsoup:1.8.3" />
+          <element id="library" level="project" name="Maven: com.vaadin:vaadin-push:7.6.8" />
+          <element id="library" level="project" name="Maven: com.vaadin.external.atmosphere:atmosphere-runtime:2.2.7.vaadin1" />
+          <element id="library" level="project" name="Maven: com.vaadin.external.slf4j:vaadin-slf4j-jdk14:1.6.1" />
+          <element id="library" level="project" name="Maven: org.w3c.css:sac:1.3" />
+          <element id="library" level="project" name="Maven: com.vaadin:vaadin-themes:7.6.8" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/rtsp2rtmp-1.0/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="rtsp2rtmp/web/Web" />
+    </root>
+  </artifact>
+</component>

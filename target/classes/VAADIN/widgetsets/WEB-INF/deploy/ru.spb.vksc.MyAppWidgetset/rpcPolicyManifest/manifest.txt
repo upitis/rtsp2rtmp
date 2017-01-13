@@ -1,0 +1,2 @@
+# Module ru.spb.vksc.MyAppWidgetset
+# RPC service class, partial path of RPC policy file
