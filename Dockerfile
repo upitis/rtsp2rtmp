@@ -1,7 +1,7 @@
 FROM        ubuntu:16.04
 MAINTAINER  Konstantin Upitis <upitis.k@gmail.com>
 
-LABEL version="1.0" description="Retransmit rtsp to rtmp stream AS IS using ffmpeg"
+LABEL version="1.1" description="Retransmit rtsp to rtmp stream AS IS using ffmpeg"
 
 
 #CMD         ["--help"]
