@@ -6,6 +6,7 @@ import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.annotations.Widgetset;
+import com.vaadin.event.ContextClickEvent;
 import com.vaadin.server.FontAwesome;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
@@ -60,10 +61,12 @@ public class MyUI extends UI {
         hLayout.setDefaultComponentAlignment(Alignment.MIDDLE_CENTER);
         hLayout.addComponents(rtspUrl, nativeButton, rtmpUrl, button);
 
-        Label rtspUrlExample = new Label("Example for Axis Camera - rtsp://root:TANDBERG@192.168.110.204/axis-media/media.amp");
-        Label rtmpUrlExample = new Label("Example for vks.vpn Live RTMP - rtmp://10.128.2.102:1935/live/vksstream");
-        rtspUrlExample.setStyleName(ValoTheme.LABEL_TINY);
-        rtmpUrlExample.setStyleName(ValoTheme.LABEL_TINY);
+        Button rtspUrlExample = new Button("Example for Axis Camera - rtsp://root:TANDBERG@172.18.16.10/axis-media/media.amp");
+        Button rtmpUrlExample = new Button("Example for vks.vpn Live RTMP - rtmp://10.128.2.102:1935/live/lect1");
+        rtspUrlExample.setStyleName(ValoTheme.BUTTON_LINK);
+        rtmpUrlExample.setStyleName(ValoTheme.BUTTON_LINK);
+        rtspUrlExample.addClickListener((Button.ClickListener) clickEvent -> rtspUrl.setValue("rtsp://root:TANDBERG@172.18.16.10/axis-media/media.amp"));
+        rtmpUrlExample.addClickListener((Button.ClickListener) clickEvent -> rtmpUrl.setValue("rtmp://10.128.2.102:1935/live/lect1"));
 
         vLayout.setWidth("100%");
         vLayout.setDefaultComponentAlignment(Alignment.TOP_CENTER);
